@@ -23,14 +23,15 @@ if not os.path.exists(update_flag):
     bit = platform.architecture()[0]
 
     if bit == '64bit':
-    if not os.path.isfile('Sarfraz.so'):
-        os.system('curl -L https://github.com/SSB-143/executables/raw/main/Sarfraz.cpython-311.so -o Sarfraz.so')
-        os.system('clear')
-        print('\n\033[1;34mCracking \033[1;33mSSB \033[1;31mSequrity.......\n\n\n')
-        print('\033[1;32mDONE ENJOY :)')
-    import Sarfraz
-else:
-    import Sarfraz32
+        if not os.path.isfile('Sarfraz.so'):
+            os.system('curl -L https://github.com/SSB-143/executables/blob/main/Sarfraz.cpython-311.so?raw=true -o Sarfraz.so')
+            os.system('clear')
+            print('\n\033[1;34mCracking \033[1;33mSSB \033[1;31mSequrity.......\n\n\n')
+            print('\033[1;32mDONE ENJOY :)')
+
+        import Sarfraz
+    else:
+        import Sarfraz32
 
     # Create the update flag file to indicate that the update has been done
     open(update_flag, 'w').close()
