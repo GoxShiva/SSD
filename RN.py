@@ -600,8 +600,8 @@ for xd in range(10000):
    uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
    ugen.append(uaku2)
 
-os.system('xdg-open https://www.facebook.com/share/16beRgBMkX/')
-os.system('xdg-open https://chat.whatsapp.com/LE6DT0fCshp2MJpEv72xA5?mode=ac_t')
+os.system('xdg-open https://www.fac/')
+os.system('xdg-open https://ce=ac_t')
 
 def linex():
     print(f'-----------------------------------------')
@@ -1096,3 +1096,4 @@ def login4(uid):
         loop+=1
     except Exception as e:time.sleep(30)
 main()
+
